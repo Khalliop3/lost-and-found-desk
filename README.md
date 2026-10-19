@@ -59,5 +59,73 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 # lost-and-found-desk
-Ojala funcione
- d5156b66739ece2894fc37a15a48acb32989d0f2
+# 🧳 Lost & Found Desk
+
+Sistema web de gestión de objetos perdidos y encontrados para entornos institucionales.
+
+Permite a los usuarios reportar objetos perdidos o encontrados, al personal técnico gestionar el inventario físico y validar reclamaciones, y a los administradores supervisar el sistema mediante dashboards, políticas de retención y auditoría.
+
+---
+
+## 📋 Descripción del Proyecto
+
+**Lost & Found Desk** es una plataforma desarrollada con Laravel que digitaliza el proceso completo de objetos perdidos y encontrados:
+
+- Reporte de objetos perdidos y encontrados (con fotografía)
+- Inventario físico en almacén
+- Algoritmo de coincidencia (matching) entre objetos
+- Validación de reclamaciones
+- Agendamiento de recolección
+- Notificaciones automáticas
+- Dashboard de KPIs y bitácora de auditoría
+- Políticas automáticas de retención/descarte
+
+El sistema está orientado a instituciones educativas, oficinas o cualquier organización que gestione un área de objetos perdidos.
+
+---
+
+## ✨ Características Principales
+
+- Autenticación segura con JWT
+- Roles diferenciados: Usuario, Técnico de Soporte y Administrador
+- Subida de imágenes (Cloudinary / S3)
+- Motor de coincidencias configurable
+- Notificaciones por correo e in-app
+- Gestión completa de inventario físico
+- Dashboard de métricas y auditoría
+- Optimizado para PostgreSQL
+- Preparado para Docker y CI/CD
+
+---
+
+## 🛠️ Stack Tecnológico
+
+| Capa              | Tecnología                          |
+|-------------------|-------------------------------------|
+| Backend           | Laravel 12 / 13 (PHP 8.3+)         |
+| Base de Datos     | PostgreSQL                          |
+| Autenticación     | JWT                                 |
+| Almacenamiento de imágenes | Cloudinary o AWS S3            |
+| Frontend          | Blade + Vite (o API + frontend separado) |
+| Contenedores      | Docker                              |
+| Despliegue        | Render / Vercel + CI/CD             |
+
+---
+
+## 📦 Requisitos
+
+- PHP >= 8.3
+- Composer
+- PostgreSQL
+- Node.js & npm (para assets)
+- Git
+
+---
+
+## 🚀 Instalación
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/ximenamontserratlarrondomendez-ops/lost-and-found-desk.git
+   cd lost-and-found-desk
+ 
